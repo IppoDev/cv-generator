@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CV Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRkC0b7B5i2F5V/aXwCOU5RYbJ8Xl/4a5ewh8szm0" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mb-5">Curriculum Vitae</h1>
+
+    <div class="section personal-details">
+        <h2>Personal Details</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Name:</strong> <span th:text="${cvData.name}"></span></p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Surname:</strong> <span th:text="${cvData.surname}"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Email:</strong> <span th:text="${cvData.email}"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+        <p th:text="${cvData.experience}"></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6pLC+o2eJ+zB8zsyT3/h/7FY5YHFKKxRElRg0Jp4Xn/twtKpsPB" crossorigin="anonymous"></script>
+</body>
+</html>

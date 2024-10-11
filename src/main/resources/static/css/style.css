@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.personal-details {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 20px;
+}
+
+.experience {
+    padding-top: 20px;
+}
